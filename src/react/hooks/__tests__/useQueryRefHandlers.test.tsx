@@ -1271,6 +1271,8 @@ test("properly uses `updateQuery` when calling `fetchMore`", async () => {
   }
 
   {
+    // additional render that only appears in Windows?!?
+    await Profiler.takeRender();
     const { snapshot } = await Profiler.takeRender();
 
     expect(snapshot.result).toEqual({
@@ -1376,6 +1378,8 @@ test("properly uses cache field policies when calling `fetchMore` without `updat
   }
 
   {
+    // additional render that only appears in Windows?!?
+    await Profiler.takeRender();
     const { snapshot } = await Profiler.takeRender();
 
     expect(snapshot.result).toEqual({
