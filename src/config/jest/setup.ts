@@ -1,3 +1,4 @@
+import "./setupTracing.js";
 import gql from "graphql-tag";
 import "@testing-library/jest-dom";
 import { loadErrorMessageHandler } from "../../dev/loadErrorMessageHandler.js";
